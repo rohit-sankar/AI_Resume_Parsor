@@ -1,0 +1,27 @@
+{
+  "name": "ai-resume-parser",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "framer-motion": "^11.11.0",
+    "gsap": "^3.12.5",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.114.0",
+    "three": "^0.169.0",
+    "lucide-react": "^0.454.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  }
+}
