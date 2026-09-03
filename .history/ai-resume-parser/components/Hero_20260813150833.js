@@ -101,7 +101,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-          className="relative mx-auto w-full max-w-md"
+          className="relative isolate mx-auto w-full max-w-md"
         >
           {/* Main resume card */}
           <div className="glass-strong relative rounded-3xl p-6 shadow-glass">
@@ -157,7 +157,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="glass absolute left-4 top-20 hidden items-center gap-2 rounded-2xl px-4 py-3 shadow-glow sm:flex"
+            className="glass pointer-events-none absolute -left-10 top-0 hidden -translate-y-1/2 items-center gap-2 rounded-2xl px-4 py-3 shadow-glow sm:flex"
           >
             <BrainCircuit className="h-5 w-5 text-primary" />
             <span className="text-xs font-semibold text-ink">AI Interview Active</span>
@@ -167,10 +167,10 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 14, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-            className="glass absolute right-5 top-1/2 hidden -translate-y-1/2 items-center gap-2 rounded-2xl border border-white/70 px-4 py-3 shadow-glow sm:flex z-10"
+            className="glass absolute -right-8 bottom-6 hidden rounded-2xl px-4 py-3 shadow-glow sm:flex items-center gap-2"
           >
             <Sparkles className="h-5 w-5 text-primary" />
-            <span className="text-xs font-semibold tracking-wide text-ink">98% Skill Match</span>
+            <span className="text-xs font-semibold text-ink">98% Skill Match</span>
           </motion.div>
         </motion.div>
       </div>

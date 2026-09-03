@@ -157,7 +157,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="glass absolute left-4 top-20 hidden items-center gap-2 rounded-2xl px-4 py-3 shadow-glow sm:flex"
+            className="glass absolute left-4 top-32 hidden items-center gap-2 rounded-2xl px-4 py-3 shadow-glow sm:flex"
           >
             <BrainCircuit className="h-5 w-5 text-primary" />
             <span className="text-xs font-semibold text-ink">AI Interview Active</span>
